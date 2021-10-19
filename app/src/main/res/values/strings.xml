@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Libros_Fly</string>
+
+    <string name="tvSplashScreen">Libros Fly</string>
 </resources>
