@@ -2,4 +2,6 @@
     <string name="app_name">Libros_Fly</string>
 
     <string name="tvSplashScreen">Libros Fly</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
