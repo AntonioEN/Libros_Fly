@@ -10,12 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Libros_Fly.NoActionBar">
         <activity
-            android:name=".Login.RegistrarFragment"
-            android:exported="true" />
-        <activity
-            android:name=".Login.MainActivity"
-            android:exported="true" />
-        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
