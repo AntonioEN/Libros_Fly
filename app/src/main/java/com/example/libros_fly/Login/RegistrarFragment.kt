@@ -35,7 +35,7 @@ class RegistrarFragment : Fragment() {
             var contrasenna = txtPasswd.text.toString()
             var correo = txtCorreo.text.toString()
 
-            if(correo.isNotEmpty() && contrasenna.isNotEmpty() && nombre.isNotEmpty()){
+            if(!correo.isEmpty() && !contrasenna.isEmpty() && !nombre.isEmpty()){
 
                 if(comprobarCorreo(correo.trim())){
                     Toast.makeText(context,"Correo valido",Toast.LENGTH_SHORT).show()

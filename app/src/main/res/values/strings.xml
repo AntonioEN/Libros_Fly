@@ -4,4 +4,8 @@
     <string name="tvSplashScreen">Libros Fly</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_listalibros">Lista Libros</string>
+    <string name="nav_mislibros">Mis Libros</string>
 </resources>

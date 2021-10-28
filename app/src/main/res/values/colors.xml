@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="verde_bosque">#476A01</color>
+    <color name="pradera">#70894C</color>
+    <color name="lima">#A2C422</color>
+    <color name="tierra">#7D4426</color>
 </resources>
