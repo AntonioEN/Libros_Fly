@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegation_app"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.libros_fly.Inicio.InicioFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_inicio"/>
+
+    <fragment
+        android:id="@+id/nav_listalibros"
+        android:name="com.example.libros_fly.ListaLibros.ListaLibrosFragment"
+        android:label="@string/nav_listalibros"
+        tools:layout="@layout/fragment_lista_libros"/>
+
+    <fragment
+        android:id="@+id/nav_mislibros"
+        android:name="com.example.libros_fly.MisLibros.MisLibrosFragment"
+        android:label="@string/nav_mislibros"
+        tools:layout="@layout/fragment_mis_libros"/>
+
+</navigation>
