@@ -8,25 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Libros_Fly">
-        <activity
-            android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/Theme.Libros_Fly.NoActionBar">
+        android:theme="@style/Theme.Libros_Fly.NoActionBar">
+        <activity android:exported="true"
+            android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login.LoginActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/login"
-            android:theme="@style/Theme.Libros_Fly.NoActionBar"/>
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.Libros_Fly.NoActionBar"
-            android:label="@string/app_name"
-            android:usesCleartextTraffic="true"/>
+        <activity
+            android:name=".Login.LoginActivity"
+            />
+
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
