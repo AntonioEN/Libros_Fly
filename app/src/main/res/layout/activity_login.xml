@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pradera"
     android:id="@+id/constraintLayout"
     tools:context=".Login.LoginActivity">
 
@@ -21,7 +22,8 @@
          android:layout_height="wrap_content"
          android:ems="10"
          android:inputType="textPersonName"
-         android:text="Name"
+            android:hint="Correo"
+         android:text=""
          app:layout_constraintBottom_toBottomOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintHorizontal_bias="0.452"
@@ -34,8 +36,9 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:ems="10"
-         android:inputType="textPersonName"
-         android:text="Name"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+         android:text=""
          app:layout_constraintBottom_toBottomOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintHorizontal_bias="0.452"
@@ -56,8 +59,8 @@
 
         <Button
          android:id="@+id/btnInicioSesion"
-         android:layout_width="111dp"
-         android:layout_height="62dp"
+         android:layout_width="149dp"
+         android:layout_height="58dp"
          android:text="Inicio Sesion"
          app:layout_constraintBottom_toBottomOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +78,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
