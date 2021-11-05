@@ -12,7 +12,8 @@ import com.example.libros_fly.MainActivity
 import com.example.libros_fly.R
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+
+internal class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private val GOOGLE_SIGN_IN = 100
@@ -24,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
 
         val btnRegistro = this.findViewById<Button>(R.id.btnRegistrar)
-        val btnI_Sesion = this.findViewById<Button>(R.id.btnInicioSesion)
+        val btnInicio = this.findViewById<Button>(R.id.btnInicioSesion)
         val txtEmail = this.findViewById<EditText>(R.id.etxtEmail)
         val txtPassword = this.findViewById<EditText>(R.id.etxtPWD)
         progressBarLogin = this.findViewById<ProgressBar>(R.id.progressbarLogin)
@@ -32,11 +33,12 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-        btnI_Sesion.setOnClickListener(View.OnClickListener{
-            if(!txtEmail.text.toString().isEmpty() && !txtPassword.text.toString().isEmpty()){
+        btnRegistro.setOnClickListener(View.OnClickListener {
+            if (txtEmail.text.toString().isNotEmpty() && txtPassword.text.toString().isNotEmpty()) {
 
                 progressBarLogin.setVisibility(View.VISIBLE)
 
+<<<<<<< Updated upstream
                 auth.signInWithEmailAndPassword(
                     txtEmail.text.toString(),
                     txtPassword.text.toString()
@@ -60,16 +62,25 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Revisa la conexion!", Toast.LENGTH_SHORT).show()
                 }
             }else{
+=======
+                progressBarLogin.setVisibility(View.GONE)
+                //pasamos al home de la aplicacion
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+
+
+            } else {
+>>>>>>> Stashed changes
                 Toast.makeText(this, "Rellene los campos!", Toast.LENGTH_SHORT).show()
             }
         })
 
-        btnRegistro.setOnClickListener(View.OnClickListener {
-
+        btnInicio.setOnClickListener(View.OnClickListener {
             val manager = supportFragmentManager
             val transaction = manager.beginTransaction()
-            val Registro = RegistrarFragment()
-            transaction.replace(R.id.constraintLayout, Registro)
+            val registrar = RegistrarFragment()
+            transaction.replace(R.id.constraintLayout, registrar)
             transaction.addToBackStack(null)
             transaction.commit()
 
