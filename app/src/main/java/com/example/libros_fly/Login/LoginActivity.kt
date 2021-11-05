@@ -33,7 +33,7 @@ internal class LoginActivity : AppCompatActivity() {
 
 
 
-        btnRegistro.setOnClickListener(View.OnClickListener {
+        btnInicio.setOnClickListener(View.OnClickListener {
             if (txtEmail.text.toString().isNotEmpty() && txtPassword.text.toString().isNotEmpty()) {
 
                 progressBarLogin.setVisibility(View.VISIBLE)
@@ -63,7 +63,7 @@ internal class LoginActivity : AppCompatActivity() {
             }
         })
 
-        btnInicio.setOnClickListener(View.OnClickListener {
+        btnRegistro.setOnClickListener(View.OnClickListener {
             val manager = supportFragmentManager
             val transaction = manager.beginTransaction()
             val registrar = RegistrarFragment()
