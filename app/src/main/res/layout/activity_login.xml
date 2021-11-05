@@ -12,7 +12,6 @@
         android:layout_height="match_parent">
 
         <EditText
-<<<<<<< Updated upstream
          android:id="@+id/etxtEmail"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
@@ -41,34 +40,6 @@
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toTopOf="parent"
          app:layout_constraintVertical_bias="0.438" />
-=======
-            android:id="@+id/etxtEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.452"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.33" />
-
-        <EditText
-            android:id="@+id/etxtPWD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.452"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.438" />
->>>>>>> Stashed changes
 
         <Button
             android:id="@+id/btnRegistrar"
@@ -83,7 +54,6 @@
             app:layout_constraintVertical_bias="0.594" />
 
         <Button
-<<<<<<< Updated upstream
          android:id="@+id/btnInicioSesion"
          android:layout_width="149dp"
          android:layout_height="58dp"
@@ -93,18 +63,6 @@
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toTopOf="parent"
          app:layout_constraintVertical_bias="0.584" />
-=======
-            android:id="@+id/btnInicioSesion"
-            android:layout_width="111dp"
-            android:layout_height="62dp"
-            android:text="Iniciar Sesion"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.718" />
->>>>>>> Stashed changes
 
         <ProgressBar
             android:id="@+id/progressbarLogin"
