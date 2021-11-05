@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "771603795291",
+    "project_id": "librosfly",
+    "storage_bucket": "librosfly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771603795291:android:1ec64e62ee53de94259e7e",
+        "android_client_info": {
+          "package_name": "com.example.libros_fly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771603795291-9bkltqad87fstag1qv6ujkeq4rhranbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7AP0fo82fHCv2hQS4mOrj4Kol2_o0c6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771603795291-9bkltqad87fstag1qv6ujkeq4rhranbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

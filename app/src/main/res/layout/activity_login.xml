@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pradera"
     android:id="@+id/constraintLayout"
     tools:context=".Login.LoginActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,6 +12,7 @@
         android:layout_height="match_parent">
 
         <EditText
+<<<<<<< HEAD
             android:id="@+id/etxtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,6 +28,57 @@
 
         <EditText
             android:id="@+id/etxtPWD"
+=======
+<<<<<<< Updated upstream
+         android:id="@+id/etxtEmail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="textPersonName"
+            android:hint="Correo"
+         android:text=""
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.452"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.33" />
+
+        <EditText
+         android:id="@+id/etxtPWD"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+         android:text=""
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.452"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.438" />
+=======
+            android:id="@+id/etxtEmail"
+>>>>>>> Programar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
+            app:layout_constraintVertical_bias="0.438" />
+
+=======
+            app:layout_constraintVertical_bias="0.33" />
+
+        <EditText
+            android:id="@+id/etxtPWD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -37,7 +90,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.438" />
+>>>>>>> Stashed changes
 
+>>>>>>> Programar
         <Button
             android:id="@+id/btnRegistrar"
             android:layout_width="116dp"
@@ -51,6 +106,20 @@
             app:layout_constraintVertical_bias="0.594" />
 
         <Button
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+         android:id="@+id/btnInicioSesion"
+         android:layout_width="149dp"
+         android:layout_height="58dp"
+         android:text="Inicio Sesion"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.584" />
+=======
+>>>>>>> Programar
             android:id="@+id/btnInicioSesion"
             android:layout_width="111dp"
             android:layout_height="62dp"
@@ -61,6 +130,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.718" />
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> Programar
 
         <ProgressBar
             android:id="@+id/progressbarLogin"
@@ -71,6 +144,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
