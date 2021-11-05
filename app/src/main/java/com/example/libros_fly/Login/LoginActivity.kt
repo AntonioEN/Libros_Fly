@@ -12,10 +12,7 @@ import com.example.libros_fly.MainActivity
 import com.example.libros_fly.R
 import com.google.firebase.auth.FirebaseAuth
 
-
-internal class LoginActivity : AppCompatActivity() {
-
-internal class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private val GOOGLE_SIGN_IN = 100
@@ -61,18 +58,8 @@ internal class LoginActivity : AppCompatActivity() {
                 }.addOnFailureListener {
                     Toast.makeText(this, "Revisa la conexion!", Toast.LENGTH_SHORT).show()
                 }
-            }else{
-
-                progressBarLogin.setVisibility(View.GONE)
-                //pasamos al home de la aplicacion
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-
-
-            } else {
-                Toast.makeText(this, "Rellene los campos!", Toast.LENGTH_SHORT).show()
             }
+
         })
 
         btnInicio.setOnClickListener(View.OnClickListener {
