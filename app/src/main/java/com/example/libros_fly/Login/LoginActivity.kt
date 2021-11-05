@@ -38,7 +38,6 @@ internal class LoginActivity : AppCompatActivity() {
 
                 progressBarLogin.setVisibility(View.VISIBLE)
 
-<<<<<<< Updated upstream
                 auth.signInWithEmailAndPassword(
                     txtEmail.text.toString(),
                     txtPassword.text.toString()
@@ -61,18 +60,6 @@ internal class LoginActivity : AppCompatActivity() {
                 }.addOnFailureListener {
                     Toast.makeText(this, "Revisa la conexion!", Toast.LENGTH_SHORT).show()
                 }
-            }else{
-=======
-                progressBarLogin.setVisibility(View.GONE)
-                //pasamos al home de la aplicacion
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-
-
-            } else {
->>>>>>> Stashed changes
-                Toast.makeText(this, "Rellene los campos!", Toast.LENGTH_SHORT).show()
             }
         })
 
