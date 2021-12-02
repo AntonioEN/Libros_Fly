@@ -9,6 +9,21 @@
     android:backgroundTint="@color/verde_bosque"
     tools:context=".Login.RegistrarFragment">
 
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        android:scrollbarThumbHorizontal="@android:color/transparent"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:src="@drawable/ic_baseline_arrow_circle_left_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
     <EditText
         android:id="@+id/etxtNombre"
         android:layout_width="wrap_content"
@@ -24,7 +39,24 @@
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/etxtNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Nick"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
 
     <EditText
         android:id="@+id/etxtPassword"
@@ -70,4 +102,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.737" />
+
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="191dp"
+        android:layout_height="60dp"
+        android:text="Registrate!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        android:textColor="@color/white"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
