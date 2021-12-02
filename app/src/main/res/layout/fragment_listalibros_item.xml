@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLibrosRelative"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:background="@color/carne"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="181dp"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="53dp"
+        android:textColor="@color/tierra" />
+
+    <TextView
+        android:id="@+id/txtAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/tierra" />
+
+    <TextView
+        android:id="@+id/txtGen"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/tierra" />
+
+</RelativeLayout>

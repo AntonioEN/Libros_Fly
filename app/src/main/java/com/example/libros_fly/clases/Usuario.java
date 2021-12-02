@@ -8,23 +8,17 @@ public class Usuario implements Serializable {
 
     private String nombre;
     private String email;
-    private String contrasenna;
     private String id;
+    private String nick;
 
-    public Usuario() {
-    }
 
-    public Usuario(String nombre, String email, String contrasenna, String id) {
+    public Usuario(String nombre, String email, String id, String nick) {
         this.nombre = nombre;
         this.email = email;
-        this.contrasenna = contrasenna;
         this.id = id;
+        this.nick = nick;
     }
 
-    public Usuario(String nombre, String id) {
-        this.nombre = nombre;
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -42,14 +36,6 @@ public class Usuario implements Serializable {
         this.email = email;
     }
 
-    public String getContrasenna() {
-        return contrasenna;
-    }
-
-    public void setContrasenna(String contrasenna) {
-        this.contrasenna = contrasenna;
-    }
-
     public String getId() {
         return id;
     }
@@ -58,14 +44,21 @@ public class Usuario implements Serializable {
         this.id = id;
     }
 
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+
 
     @Override
     public String toString() {
         return "Usuario{" +
                 "nombre='" + nombre + '\'' +
                 ", email='" + email + '\'' +
-                ", contrasenna='" + contrasenna + '\'' +
-                ", idUsuario=" + id +
-                '}';
+                ", id='" + id + '\'' +
+                ", nick='" + nick + '}';
     }
 }

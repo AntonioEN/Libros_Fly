@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlReservasRelative"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:background="@color/carne"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/txtTitLibro"
+        android:layout_width="204dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="36dp"
+        android:textColor="@color/tierra" />
+
+    <TextView
+        android:id="@+id/txtFechaFin"
+        android:layout_width="204dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="37dp"
+        android:textColor="@color/tierra" />
+
+
+</RelativeLayout>

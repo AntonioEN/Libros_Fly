@@ -17,6 +17,7 @@ class SplashScreen : AppCompatActivity() {
         handler= Handler()
         handler.postDelayed({
 
+            //Temporizador para que cuando pasen 3 segundo valla direntamente al LoginActivity
             val intent= Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()

@@ -31,7 +31,12 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
 
+<<<<<<< HEAD
         btnRegistro.setOnClickListener(View.OnClickListener {
+=======
+
+        btnInicio.setOnClickListener(View.OnClickListener {
+>>>>>>> Programar
             if (txtEmail.text.toString().isNotEmpty() && txtPassword.text.toString().isNotEmpty()) {
 
                 progressBarLogin.setVisibility(View.VISIBLE)
@@ -62,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
 
         })
 
-        btnInicio.setOnClickListener(View.OnClickListener {
+        btnRegistro.setOnClickListener(View.OnClickListener {
             val manager = supportFragmentManager
             val transaction = manager.beginTransaction()
             val registrar = RegistrarFragment()

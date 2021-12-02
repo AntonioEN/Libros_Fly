@@ -1,60 +1,84 @@
 package com.example.libros_fly.MisLibros
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.libros_fly.ListaLibros.ListaLibrosAdapter
 import com.example.libros_fly.R
+import com.example.libros_fly.clases.Libros
+import com.example.libros_fly.clases.Reservas
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [MisLibrosFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+//Fragment para recoger los datos de las reservas de la base de datos y despues pasarselo a un Adapter
 class MisLibrosFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var columnCount = 1
+    private lateinit var database: FirebaseDatabase
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var listaReservas: ArrayList<Reservas>
+    private lateinit var root : View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mis_libros, container, false)
+
+        root =  inflater.inflate(R.layout.fragment_mis_libros, container, false)
+        vistaLista(root)
+        return root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment MisLibrosFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MisLibrosFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    private fun vistaLista(root: View){
+        //Se utiliza un arrayList para guardar dentro de él todos los libros
+        listaReservas = ArrayList()
+        database = FirebaseDatabase.getInstance("https://librosfly-default-rtdb.europe-west1.firebasedatabase.app/")
+        databaseReference = database.reference.child("reservas")
+
+        databaseReference.addValueEventListener(object : ValueEventListener{
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+            //Al cambiar de reserva, se recogera mediante la clase Reserva y se almacenara en una variable que al final se añadira al arraylist antes comentado
+            override fun onDataChange(snapshot: DataSnapshot) {
+                snapshot.children.forEach {
+                    val idUsuario = FirebaseAuth.getInstance().uid.toString()
+                    val usu = it.child("id_usuario").value.toString()
+                    if (usu.equals(idUsuario)) {
+                        val reserva = Reservas(
+                            it.child("isbn").value.toString(),
+                            it.child("id_usuario").value.toString(),
+                            it.child("fecha_reserva_fin").value.toString(),
+                            it.child("titulo").value.toString()
+                        )
+                        listaReservas.add(reserva)
+                    }
+                    try{
+                        with(root) {
+                            (root as RecyclerView).layoutManager = when {
+                                columnCount <= 1 -> LinearLayoutManager(context)
+                                else -> GridLayoutManager(context, columnCount)
+                            }
+                            //Se pasara al adapter el arrayList que contiene las reservas que se han almacenado dentro de el
+                            val fm = fragmentManager
+                            (root as RecyclerView).adapter =
+                                MisLibrosAdapter(listaReservas, fm!!)
+                        }
+                    }catch (e : Exception ){
+
+                    }
+
                 }
             }
+        })
     }
 }
