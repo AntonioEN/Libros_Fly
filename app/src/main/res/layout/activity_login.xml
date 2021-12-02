@@ -60,7 +60,6 @@
 
         <Button
             android:id="@+id/btnRegistrar"
-<<<<<<< HEAD
             android:layout_width="116dp"
             android:layout_height="60dp"
             android:text="Registrarse"
@@ -81,28 +80,6 @@
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toTopOf="parent"
          app:layout_constraintVertical_bias="0.584" />
-=======
-            android:layout_width="176dp"
-            android:layout_height="57dp"
-            android:text="Registrarse"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.764" />
-
-        <Button
-            android:id="@+id/btnInicioSesion"
-            android:layout_width="176dp"
-            android:layout_height="57dp"
-            android:text="Inicio Sesion"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.637" />
 
         <Button
             android:id="@+id/btnInicioSesionGoogle"
@@ -115,7 +92,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.887" />
->>>>>>> Programar
 
         <ProgressBar
             android:id="@+id/progressbarLogin"
