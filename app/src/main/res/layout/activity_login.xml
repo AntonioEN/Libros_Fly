@@ -7,15 +7,31 @@
     android:background="@color/pradera"
     android:id="@+id/constraintLayout"
     tools:context=".Login.LoginActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="52dp">
+
+        <TextView
+            android:id="@+id/txtDetalle"
+            android:layout_width="278dp"
+            android:layout_height="187dp"
+            android:text="¡Inicia Sesión o             Registrate!"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056" />
 
         <EditText
             android:id="@+id/etxtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#E8DFDF"
+            android:backgroundTint="@color/white"
             android:ems="10"
             android:hint="Correo"
             android:inputType="textPersonName"
@@ -25,7 +41,7 @@
             app:layout_constraintHorizontal_bias="0.452"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.33" />
+            app:layout_constraintVertical_bias="0.36" />
 
         <EditText
             android:id="@+id/etxtPWD"
@@ -40,30 +56,43 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.452"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.438" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnRegistrar"
-            android:layout_width="187dp"
-            android:layout_height="56dp"
+            android:layout_width="176dp"
+            android:layout_height="57dp"
             android:text="Registrarse"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.687" />
+            app:layout_constraintVertical_bias="0.764" />
 
         <Button
             android:id="@+id/btnInicioSesion"
-            android:layout_width="149dp"
-            android:layout_height="58dp"
+            android:layout_width="176dp"
+            android:layout_height="57dp"
             android:text="Inicio Sesion"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.56" />
+            app:layout_constraintVertical_bias="0.637" />
+
+        <Button
+            android:id="@+id/btnInicioSesionGoogle"
+            android:layout_width="176dp"
+            android:layout_height="57dp"
+            android:text="Inicio Sesion con Google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887" />
 
         <ProgressBar
             android:id="@+id/progressbarLogin"
@@ -74,7 +103,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
