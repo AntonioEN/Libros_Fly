@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import java.lang.Exception
 
-//Frangmen que sera llamado cuando el usuario inicie sesion
+//Fragment que sera llamado cuando el usuario inicie sesion
 class InicioFragment : Fragment() {
 
     private lateinit var inicioVM : InicioVM
