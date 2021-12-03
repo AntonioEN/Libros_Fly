@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="52dp">
+        tools:layout_editor_absoluteY="18dp">
 
         <TextView
             android:id="@+id/txtDetalle"
@@ -60,26 +60,27 @@
 
         <Button
             android:id="@+id/btnRegistrar"
-            android:layout_width="116dp"
-            android:layout_height="60dp"
+            android:layout_width="176dp"
+            android:layout_height="57dp"
             android:text="Registrarse"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.594" />
+            app:layout_constraintVertical_bias="0.749" />
 
         <Button
-         android:id="@+id/btnInicioSesion"
-         android:layout_width="149dp"
-         android:layout_height="58dp"
-         android:text="Inicio Sesion"
-         app:layout_constraintBottom_toBottomOf="parent"
-         app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintTop_toTopOf="parent"
-         app:layout_constraintVertical_bias="0.584" />
+            android:id="@+id/btnInicioSesion"
+            android:layout_width="176dp"
+            android:layout_height="57dp"
+            android:text="Inicio Sesion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.627" />
 
         <Button
             android:id="@+id/btnInicioSesionGoogle"
@@ -91,7 +92,7 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.887" />
+            app:layout_constraintVertical_bias="0.86" />
 
         <ProgressBar
             android:id="@+id/progressbarLogin"
