@@ -8,4 +8,5 @@
     <string name="nav_home">Inicio</string>
     <string name="nav_listalibros">Lista Libros</string>
     <string name="nav_mislibros">Mis Libros</string>
+    <string name="default_web_client_id_" />
 </resources>
