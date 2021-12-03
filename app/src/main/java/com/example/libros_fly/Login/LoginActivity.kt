@@ -12,8 +12,7 @@ import com.example.libros_fly.MainActivity
 import com.example.libros_fly.R
 import com.google.firebase.auth.FirebaseAuth
 
-
-internal class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private val GOOGLE_SIGN_IN = 100
@@ -32,8 +31,12 @@ internal class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
 
+<<<<<<< HEAD
+        btnRegistro.setOnClickListener(View.OnClickListener {
+=======
 
         btnInicio.setOnClickListener(View.OnClickListener {
+>>>>>>> Programar
             if (txtEmail.text.toString().isNotEmpty() && txtPassword.text.toString().isNotEmpty()) {
 
                 progressBarLogin.setVisibility(View.VISIBLE)
@@ -61,6 +64,7 @@ internal class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Revisa la conexion!", Toast.LENGTH_SHORT).show()
                 }
             }
+
         })
 
         btnRegistro.setOnClickListener(View.OnClickListener {

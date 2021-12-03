@@ -19,8 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Libros_Fly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-
-    <style name="Theme.Libros_Fly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Libros_Fly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Libros_Fly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 </resources>
