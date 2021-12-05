@@ -1,7 +1,7 @@
 # Libros_Fly
 BIENVENIDO A LIBROS FLY<br/>
 _"Donde la imaginacion es tu amigo"<br/>_
-Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener que ir presencialmente
+Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener que ir presencialmente 🚀
 
 ## ¿Qué sé podra realizar con esta aplicación?
 📥 * Reservar libros
