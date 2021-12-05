@@ -6,7 +6,7 @@ Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener
 ## ¿Qué sé podra realizar con esta aplicación?
 📥 * Reservar libros <br/>
 📤 * Devolver los libros que has reservados <br/>
-📫 * Pedir ejemplares de los libros que te guste <br/>
+📫 * Pedir ejemplares de los libros que te gusten <br/>
 📫 * Mandar sugerencias de libros que te gusten y no tenga la biblioteca <br/>
 📦 * Y mas opciones...
 
