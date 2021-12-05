@@ -4,10 +4,10 @@ _"Donde la imaginacion es tu amigo"<br/>_
 Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener que ir presencialmente 🚀
 
 ## ¿Qué sé podra realizar con esta aplicación?
-📥 * Reservar libros
-📤 * Devolver los libros que has reservados
-📫 * Pedir ejemplares de los libros que te guste
-📫 * Mandar sugerencias de libros que te gusten y no tenga la biblioteca
+📥 * Reservar libros <br/>
+📤 * Devolver los libros que has reservados <br/>
+📫 * Pedir ejemplares de los libros que te guste <br/>
+📫 * Mandar sugerencias de libros que te gusten y no tenga la biblioteca <br/>
 📦 * Y mas opciones...
 
 
