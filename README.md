@@ -12,13 +12,13 @@ Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener
 
 
 ## Contenido y manuales
-📖 Wiki del proyecto: [Wiki](https://github.com/AntonioEN/Libros_Fly/wiki)<br/>
+📖 Wiki del proyecto: <br/>
 👨‍💻 Código fuente: [Code](https://github.com/AntonioEN/Libros_Fly/tree/master/app)<br/>
 
 
 ## Workflow del proyecto
 🌳 Tree del proyecto utilizando GitKraken
-![tree](https://user-images.githubusercontent.com/58556550/144766168-0733cec3-e391-4149-a2c9-b9d502432aff.png)
+
 
 ## Herramientas utilizadas 🛠️
 * Android Studio: [Android](https://developer.android.com/studio?gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rBXorZsZkaM5eZNQjvWKFiWe1yPln_Oe_lllkJEw3RrQKcSNBhamD8aAsBrEALw_wcB&gclsrc=aw.ds)<br/>
