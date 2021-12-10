@@ -11,6 +11,7 @@ public class Libros implements Serializable {
     private String ISBN;
     private String genero;
     private String stock;
+    private String fotoPortada;
 
     public Libros() {
 
@@ -34,13 +35,14 @@ public class Libros implements Serializable {
         this.sinopsis = sinopsis;
     }
 
-    public Libros(String titulo, String autor, String sinopsis, String ISBN, String genero, String stock) {
+    public Libros(String titulo, String autor, String sinopsis, String ISBN, String genero, String stock, String fotoPortada) {
         this.titulo = titulo;
         this.autor = autor;
         this.sinopsis = sinopsis;
         this.ISBN = ISBN;
         this.genero = genero;
         this.stock = stock;
+        this.fotoPortada = fotoPortada;
     }
 
     public String getTitulo() {
@@ -83,6 +85,14 @@ public class Libros implements Serializable {
 
     public void setStock(String stock) { this.stock = stock; }
 
+    public String getFotoPortada() {
+        return fotoPortada;
+    }
+
+    public void setFotoPortada(String fotoPortada) {
+        this.fotoPortada = fotoPortada;
+    }
+
     @Override
     public String toString() {
         return "Libros{" +
@@ -91,7 +101,8 @@ public class Libros implements Serializable {
                 ", sinopsis='" + sinopsis + '\'' +
                 ", ISBN='" + ISBN + '\'' +
                 ", genero='" + genero + '\'' +
-                ", stock=" + stock +
+                ", stock='" + stock + '\'' +
+                ", fotoPortada='" + fotoPortada + '\'' +
                 '}';
     }
 }

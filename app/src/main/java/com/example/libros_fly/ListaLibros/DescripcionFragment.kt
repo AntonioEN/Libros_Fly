@@ -34,6 +34,15 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
+import android.graphics.BitmapFactory
+
+import android.graphics.Bitmap
+import android.util.Base64
+import com.google.android.gms.common.util.Base64Utils.decode
+import java.security.spec.PSSParameterSpec.DEFAULT
+import java.io.ByteArrayOutputStream
+import kotlin.collections.ArrayList
+
 
 //Fragment para sacar los datos del libro seleccionado por el usuario
 class DescripcionFragment : Fragment(){
@@ -45,12 +54,14 @@ class DescripcionFragment : Fragment(){
     private lateinit var sinopsis: TextView
     private lateinit var genero : TextView
     private lateinit var ejemplares : TextView
+    private lateinit var portada : ImageView
     private lateinit var database: FirebaseDatabase
     private lateinit var dbReference: DatabaseReference
     private lateinit var dbReferencer: DatabaseReference
     private lateinit var dbReferencerp: DatabaseReference
     private lateinit var dbReferencerpr: DatabaseReference
     private lateinit var fecha : String
+    private lateinit var portadaBase64 : String
     private lateinit var txtFecha : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -79,6 +90,7 @@ class DescripcionFragment : Fragment(){
         sinopsis = root.findViewById(R.id.txtSin)
         genero = root.findViewById(R.id.txtGenero)
         ejemplares = root.findViewById(R.id.txtStock)
+        portada = root.findViewById(R.id.ivPortada)
 
 
         database = FirebaseDatabase.getInstance("https://librosfly-default-rtdb.europe-west1.firebasedatabase.app/")
@@ -94,6 +106,11 @@ class DescripcionFragment : Fragment(){
         sinopsis.text = libro?.sinopsis
         ejemplares.text = libro?.stock
         titulo.text = libro?.titulo
+        portadaBase64 = libro?.fotoPortada.toString()
+
+        val imageBytes  = Base64.decode(portadaBase64, Base64.DEFAULT)
+        val decodedImage = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
+        portada.setImageBitmap(decodedImage)
 
         var n_ejemplares = Integer.parseInt(ejemplares.text.toString())
         val idUsuario = FirebaseAuth.getInstance().uid.toString()
@@ -101,7 +118,6 @@ class DescripcionFragment : Fragment(){
         val btnPrestamo = root.findViewById<Button>(R.id.btnInformar)
         val btnFecha = root.findViewById<Button>(R.id.btnFecha)
         txtFecha = root.findViewById<TextView>(R.id.txtFecha)
-
 
         //Cuando se pulse el boton 'Reservar Fecha' llame al metodo showDatePickerDialog()
         btnFecha.setOnClickListener( View.OnClickListener {
@@ -140,6 +156,7 @@ class DescripcionFragment : Fragment(){
                                             .getReference("prestamo").child(hijo)
                                             .setValue(pre).addOnCompleteListener {
                                                 if(it.isSuccessful){
+                                                    cambiarFragment()
                                                     val t = Toast.makeText(context, "Pedida de prestamos realizada, aviso enviado", Toast.LENGTH_SHORT)
                                                     t.show()
                                                 }else{
@@ -243,6 +260,7 @@ class DescripcionFragment : Fragment(){
         transaction.addToBackStack(null)
         transaction.commit()
     }
+
 
 
     companion object {

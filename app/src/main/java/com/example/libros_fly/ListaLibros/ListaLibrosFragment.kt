@@ -153,7 +153,8 @@ class ListaLibrosFragment : Fragment() {
                         it.child("Sinopsis").value.toString(),
                         it.child("ISBN").value.toString(),
                         it.child("Genero").value.toString(),
-                        it.child("Stock").value.toString()
+                        it.child("Stock").value.toString(),
+                        it.child("Portada").value.toString()
                     )
                     listaLibros.add(libro)
 
@@ -200,7 +201,8 @@ class ListaLibrosFragment : Fragment() {
                                 it.child("Sinopsis").value.toString(),
                                 it.child("ISBN").value.toString(),
                                 it.child("Genero").value.toString(),
-                                it.child("Stock").value.toString()
+                                it.child("Stock").value.toString(),
+                                it.child("Portada").value.toString()
                             )
                             listaLibros.add(libro)
                         }
