@@ -13,7 +13,7 @@ Donde con una simple aplicacación tendrás conexion con tu biblioteca sin tener
 
 ## Contenido y manuales
 📖 Wiki del proyecto: [Wiki](https://github.com/AntonioEN/Libros_Fly/wiki) (no esta completa, ya que surge un fallo al subir las imagenes)<br/>
-[PDF](https://github.com/AntonioEN/Libros_Fly/files/7694480/Documentacion_ProyectoFinal_AntonioEspinosa.pdf) (esta seria la wiki en su lugar, disculpen las molestias)
+[PDF](https://github.com/AntonioEN/Libros_Fly/files/7694480/Documentacion_ProyectoFinal_AntonioEspinosa.pdf) (esta seria la wiki en su lugar, disculpen las molestias)<br/>
 👨‍💻 Código fuente: [Code](https://github.com/AntonioEN/Libros_Fly/tree/master/app)<br/>
 
 
